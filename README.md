@@ -1,3 +1,8 @@
+0. editer : 
+https://namdaik.com
+https://xasaxa.com 
+https://boogek.com 
+
 #Setting
 1. Import database cakeshop_db.sql
 2. Move cakeshop directory to root http directory. Example: http://localhost/cakeshop 
