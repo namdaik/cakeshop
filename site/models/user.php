@@ -26,12 +26,5 @@
 			return parent::all_user_order($user);
 		}
 
-		public function user_update_info($data) {
-			return parent::user_update($data);
-		}
-
-		public function user_update_avatar($data) {
-			return parent::user_update($data);
-		}
 
 	}

@@ -1,6 +1,5 @@
 <html>
 	<head>
-
 		<base href="http://<?php echo $_SERVER['HTTP_HOST'];?>/cakeshop/">
 		<meta charset="UTF-8" />
 		<title>Shop Bánh Ngọt</title>
@@ -10,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<script type="text/javascript" src="public/js/jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="public/stylesheet/animate.css">
+		
 	</head>
 	
 <script src="public/js/wow.js"></script>

@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<<<<<<< HEAD
-<base href="http://cakeshop.test/">
-=======
 <base href="http://<?php echo $_SERVER['HTTP_HOST'];?>/cakeshop/">
->>>>>>> first commit
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="content-language" content="vi">
   <meta name="viewport" content="width=device-width, initial-scale=1">

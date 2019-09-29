@@ -293,53 +293,7 @@
 
 		}
 
-		public function get_user_by_id($id) {
-			$query = " SELECT * FROM users WHERE  id = '$id' ";
 
-			$results = mysqli_query( Database::$dbc, $query );
 
-			if(!$results){
-        		return FALSE;
-        	}
-        	else{
-        		$dataUser = mysqli_fetch_array($results,MYSQLI_ASSOC)	;
-        		return $dataUser;
-        	}
-		}
-
-		public function user_update($data) {
-			if (isset($data['user_update_info'])) {
-				$user_id = $_SESSION['user']['id'];
-				$name = $data['name'];
-				$address = $data['address'];
-				$phone = $data['phone'];
-				$query_update = "UPDATE users SET name='$name', address='$address', phone='$phone' WHERE id='$user_id'";
-				$result = mysqli_query(Database::$dbc, $query_update);
-				if(!$result){
-	        		return die("Query {$query}\n<br/> MYSQL Error:".mysqli_error(Database::$dbc));
-	        	}
-	        	else{
-	        		$user = $this->get_user_by_id($user_id);
-	        		$_SESSION['user']['name'] = $user['name'];
-	        		$_SESSION['user']['phone'] = $user['phone'];
-	        		$_SESSION['user']['address'] = $user['address'];
-	        		return true;
-	        	}
-			}
-			if (isset($data['user_update_avatar'])) {
-				$avatar = $data['file_name'];
-				$user_id = $_SESSION['user']['id'];
-				$query_update = "UPDATE users SET avatar='$avatar' WHERE id='$user_id'";
-				$result = mysqli_query(Database::$dbc, $query_update);
-				if(!$result){
-	        		return die("Query {$query}\n<br/> MYSQL Error:".mysqli_error(Database::$dbc));
-	        	}
-	        	else{
-	        		$user = $this->get_user_by_id($user_id);
-	        		$_SESSION['user']['avatar'] = $user['avatar'];
-	        		return true;
-	        	}
-			}
-		}
 		
 	}

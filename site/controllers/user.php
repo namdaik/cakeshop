@@ -27,6 +27,11 @@
 				require('site/views/user/index.php');
 			}
 
+
+
+
+
+
 		}
 
 
@@ -147,48 +152,4 @@
 
 		}
 
-
-		public function update_info() {
-			if (isset($_SESSION['user'])) {
-				if (isset($_GET['user_update_info'])) {
-					$dataUpdate = $_GET;
-					parent::user_update_info($dataUpdate);
-				}
-				header('Location: /user');
-			} else {
-				header('Location: /');
-			}
-			
-		}
-
-		public function update_avatar() {
-			if (isset($_SESSION['user'])) {
-				if (isset($_POST['user_update_avatar'])) {
-					if (isset($_FILES['avatar_input'])) {
-						$file = $_FILES['avatar_input'];
-						$mimeType = $file['type'];
-						if ($mimeType != 'image/png' && $mimeType != 'image/jpeg' && $mimeType != 'image/gif') {
-							echo 'Chỉ cho phép ảnh png, jpeg, gif';
-							return true;
-						}
-
-						$target_dir = "public/images/user/";
-						$file_name = $_SESSION['user']['username'].'.'.$this->getImageExtension($mimeType);
-						move_uploaded_file($file['tmp_name'], $target_dir.$file_name);
-						$data = [
-							'file_name' => $file_name,
-							'user_update_avatar' => true
-						];
-						parent::user_update_avatar($data);
-						header("Location: /user");
-					}
-				}
-			} else {
-				header('Location: /');
-			}
-		}
-		public function getImageExtension($str) {
-			$s = explode('/', $str);
-			return $s[1];
-		}
 	}

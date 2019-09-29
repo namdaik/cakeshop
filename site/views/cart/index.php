@@ -15,7 +15,9 @@
 		<!-- Row content -->
 		<div class="row">
 			<h2 class="cart-name">GIỎ HÀNG</h2>
-			<?php if($cart && count($cart) >0){ sort($cart); ?>
+
+			<?php if(count($cart) >0){ sort($cart); ?>
+
 
 			<div class="form-cart">
 				<form method="POST" action="cart">

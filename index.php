@@ -1,7 +1,6 @@
 <?php
 ob_start();
 session_start();
-header("X-XSS-Protection: 0");
 
 
 	/**
@@ -27,13 +26,12 @@ header("X-XSS-Protection: 0");
 	 */
 	require_once('site/models/MasterModel.php');
 
+
 	/**
 	 * [$URL description] Lấy controller và action từ đường dẫn
 	 */
-	//$GET = $_SERVER['PHP_SELF'];
 	$URL = isset($_GET['url']) ? $_GET['url'] : null;
 	$URL = rtrim($URL, '/\\');
-
 
 
 //Search

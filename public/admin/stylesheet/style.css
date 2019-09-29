@@ -318,13 +318,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-<<<<<<< HEAD
-  src: url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.eot");
-  src: url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-=======
   src: url("/cakeshop/public/fonts/glyphicons-halflings-regular.eot");
   src: url("/cakeshop/public/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/cakeshop/public/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/cake_shop/cakeshop/public/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
->>>>>>> first commit
 }
 
 .glyphicon {

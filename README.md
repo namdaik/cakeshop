@@ -1,11 +1,3 @@
-
-# cake_shop
-# Basic PHP Site for testing Hack Web Application
-1. XSS
-2. SQL Injection
-3. CSRF
-4. LFI/RFI
-
 #Setting
 1. Import database cakeshop_db.sql
 2. Move cakeshop directory to root http directory. Example: http://localhost/cakeshop 
