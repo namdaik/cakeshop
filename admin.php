@@ -101,5 +101,5 @@ $fileNameAdmin = 'admin/controllers/'.$controllerAdmin.'.php';
 }
 else{
 	echo "<script>alert('Not Admin')</script>";
-	echo "<script>window.location.href='http://cakeshop.test/user/login'</script>";
+	echo "<script>window.location.href='user/login'</script>";
 }

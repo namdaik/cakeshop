@@ -33,4 +33,5 @@
 		public function user_update_avatar($data) {
 			return parent::user_update($data);
 		}
+
 	}

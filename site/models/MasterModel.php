@@ -293,7 +293,6 @@
 
 		}
 
-
 		public function get_user_by_id($id) {
 			$query = " SELECT * FROM users WHERE  id = '$id' ";
 

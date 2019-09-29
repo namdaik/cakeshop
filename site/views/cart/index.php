@@ -17,7 +17,6 @@
 			<h2 class="cart-name">GIỎ HÀNG</h2>
 			<?php if($cart && count($cart) >0){ sort($cart); ?>
 
-
 			<div class="form-cart">
 				<form method="POST" action="cart">
 					<table>

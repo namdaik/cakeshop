@@ -30,10 +30,11 @@ header("X-XSS-Protection: 0");
 	/**
 	 * [$URL description] Lấy controller và action từ đường dẫn
 	 */
-	
-	$GET = $_SERVER['PHP_SELF'];
+	//$GET = $_SERVER['PHP_SELF'];
+	$URL = isset($_GET['url']) ? $_GET['url'] : null;
+	$URL = rtrim($URL, '/\\');
 
-	$URL = rtrim($GET, '/\\');
+
 
 //Search
 
@@ -58,12 +59,13 @@ header("X-XSS-Protection: 0");
 	 */
 
 	$url = explode('/', $URL);
+
 	/**
 	 * [$controller description]  Lấy controller, action, tham số action từ mảng $url
 	 */
-	$controller = !empty($url[1]) ? $url[1] : "home";
-	$action = isset($url[2]) ? $url[2] : "index";
-	$param = isset($url[3]) ? $url[3] : null;
+	$controller = !empty($url[0]) ? $url[0] : "home";
+	$action = isset($url[1]) ? $url[1] : "index";
+	$param = isset($url[2]) ? $url[2] : null;
  	
 
 // echo $controller.'<br>'; 
@@ -75,8 +77,6 @@ header("X-XSS-Protection: 0");
 	 * [$fileName description] Lưu đường dẫn tới file controller
 	 */
 	$fileName = 'site/controllers/'.$controller.'.php';
-
-
 	/**
 	 * Kiểm tra tồn tại của file controller. Nếu tồn tại thì gọi controller và action(nếu có). Không tồn tại thì trả về 404 error
 	 */

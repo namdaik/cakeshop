@@ -27,11 +27,6 @@
 				require('site/views/user/index.php');
 			}
 
-
-
-
-
-
 		}
 
 
@@ -151,6 +146,7 @@
 			}
 
 		}
+
 
 		public function update_info() {
 			if (isset($_SESSION['user'])) {

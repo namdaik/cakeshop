@@ -67,7 +67,6 @@
 
 			<?php if($cart && count($cart) >0){ ?>
 
-
 			<div class="form-cart">
 					<table>
 						<thead>

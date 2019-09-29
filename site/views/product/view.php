@@ -74,7 +74,7 @@
 					<?php } ?>
 
 							<div class="all-comment">
-	
+								
 				<?php if( $list_comment && count($list_comment) >0 ) { 
 						
 							 foreach($list_comment as $item_comment){ ?>

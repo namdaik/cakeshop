@@ -13,8 +13,8 @@ class Database{
 	public static $dbc;
 	private static $db_host = 'localhost';
 	private static $db_user = 'root';
-	private static $db_password = '12041907';
-	private static $db_name = 'cakeshop_db';
+	private static $db_password = '123456';
+	private static $db_name = 'cakeshop';
 	private static $collation = 'utf8';
 
 	//Kết nối database
